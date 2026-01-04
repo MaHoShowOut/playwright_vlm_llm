@@ -1,0 +1,559 @@
+{
+  "title": "Tesseract.js OCR数学验证码实验报告",
+  "date": "2025-07-14T06:48:37.868Z",
+  "duration": 66.669,
+  "accuracy": "0.00",
+  "totalRuns": 90,
+  "totalSuccess": 0,
+  "totalFailures": 90,
+  "config": {
+    "totalRunsPerBrowser": 30,
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ]
+  },
+  "results": [
+    {
+      "browser": "chromium",
+      "run": 1,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 2,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 3,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 4,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 5,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 6,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 7,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 8,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 9,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 10,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 11,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 12,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 13,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 14,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 15,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 16,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 17,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 18,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 19,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 20,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 21,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 22,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 23,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 24,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 25,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 26,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 27,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 28,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 29,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "chromium",
+      "run": 30,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 1,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 2,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 3,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 4,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 5,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 6,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 7,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 8,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 9,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 10,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 11,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 12,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 13,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 14,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 15,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 16,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 17,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 18,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 19,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 20,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 21,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 22,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 23,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 24,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 25,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 26,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 27,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 28,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 29,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "firefox",
+      "run": 30,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 1,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 2,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 3,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 4,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 5,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 6,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 7,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 8,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 9,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 10,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 11,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 12,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 13,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 14,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 15,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 16,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 17,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 18,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 19,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 20,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 21,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 22,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 23,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 24,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 25,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 26,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 27,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 28,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 29,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    },
+    {
+      "browser": "webkit",
+      "run": 30,
+      "success": false,
+      "reason": "worker.loadLanguage is not a function"
+    }
+  ]
+}

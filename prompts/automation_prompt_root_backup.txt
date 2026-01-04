@@ -1,0 +1,27 @@
+使用playwright MCP工具执行完整的批量员工创建任务：
+
+1. 确保已登录到 http://eaapp.somee.com (admin/password)
+2. 依次创建以下员工：
+
+第一个员工：
+- 姓名：张三
+- 薪水：75000
+- 工作时长：24
+- 级别：Senior
+- 邮箱：zhang.san@company.com
+
+第二个员工：
+- 姓名：李四
+- 薪水：90000
+- 工作时长：36
+- 级别：Middle
+- 邮箱：li.si@company.com
+
+第三个员工：
+- 姓名：王五
+- 薪水：65000
+- 工作时长：18
+- 级别：Junior
+- 邮箱：wang.wu@company.com
+
+每创建一个员工后都要验证成功，最后提供完整的创建结果报告。

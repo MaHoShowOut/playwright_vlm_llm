@@ -1,0 +1,95 @@
+{
+  "title": "中文点击验证码多浏览器实验报告",
+  "date": "2025-07-14T06:16:49.191Z",
+  "duration": 138.838,
+  "accuracy": "93.33",
+  "totalRuns": 15,
+  "totalSuccess": 14,
+  "totalFailures": 1,
+  "config": {
+    "totalRunsPerBrowser": 5,
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ]
+  },
+  "results": [
+    {
+      "browser": "chromium",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 3,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 5,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 3,
+      "success": false,
+      "reason": "page.click: Target page, context or browser has been closed"
+    },
+    {
+      "browser": "firefox",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 5,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 3,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 5,
+      "success": true
+    }
+  ]
+}

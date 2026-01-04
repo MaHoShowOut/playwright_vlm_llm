@@ -1,0 +1,94 @@
+{
+  "experiment": {
+    "title": "数学题验证码AI识别实验报告",
+    "description": "基于Qwen-VL的纯视觉识别能力验证",
+    "totalTests": 90,
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "testsPerBrowser": 30,
+    "experimentStart": "2025-07-13T11:33:12.378Z",
+    "experimentEnd": "2025-07-13T11:41:45.719Z",
+    "duration": 8.555683333333333
+  },
+  "results": {
+    "chromium": {
+      "total": 30,
+      "success": 30,
+      "failed": 0,
+      "accuracy": 100,
+      "byDifficulty": {
+        "easy": {
+          "total": 11,
+          "success": 11,
+          "accuracy": "100.0"
+        },
+        "medium": {
+          "total": 14,
+          "success": 14,
+          "accuracy": "100.0"
+        },
+        "hard": {
+          "total": 5,
+          "success": 5,
+          "accuracy": "100.0"
+        }
+      }
+    },
+    "firefox": {
+      "total": 30,
+      "success": 30,
+      "failed": 0,
+      "accuracy": 100,
+      "byDifficulty": {
+        "easy": {
+          "total": 13,
+          "success": 13,
+          "accuracy": "100.0"
+        },
+        "medium": {
+          "total": 5,
+          "success": 5,
+          "accuracy": "100.0"
+        },
+        "hard": {
+          "total": 12,
+          "success": 12,
+          "accuracy": "100.0"
+        }
+      }
+    },
+    "webkit": {
+      "total": 30,
+      "success": 30,
+      "failed": 0,
+      "accuracy": 100,
+      "byDifficulty": {
+        "easy": {
+          "total": 10,
+          "success": 10,
+          "accuracy": "100.0"
+        },
+        "medium": {
+          "total": 13,
+          "success": 13,
+          "accuracy": "100.0"
+        },
+        "hard": {
+          "total": 7,
+          "success": 7,
+          "accuracy": "100.0"
+        }
+      }
+    }
+  },
+  "statistics": {
+    "overallAccuracy": "100.0",
+    "totalTests": 90,
+    "totalSuccess": 90,
+    "totalFailed": 0,
+    "crossBrowserConsistency": "NaN"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "page": "broken-layout",
+  "analysis_type": "layout_defects",
+  "timestamp": "2025-12-28T05:27:04.038Z",
+  "analysis": {
+    "success": true,
+    "analysis": "### 布局缺陷深度分析结果\n\n**发现的布局问题 (10个):**\n1. ❌ 登录容器宽度过小 (width: 150px)，导致内容严重挤压\n2. ❌ 容器位置偏移 (margin-left: -50px)，破坏页面对齐\n3. ❌ 容器旋转 (transform: rotate(5deg))，破坏页面结构\n4. ❌ 标签文字过小 (font-size: 8px)，影响可读性\n5. ❌ 文字强制截断 (overflow: hidden + text-overflow: ellipsis)，可能丢失重要信息\n6. ❌ 输入框相对定位偏移 (left: 20px)，造成布局不整齐\n7. ⚠️ 验证码容器使用列布局，可能影响移动端体验\n8. ❌ 验证码被遮挡 (z-index: -1)，完全不可见\n9. ❌ 刷新按钮尺寸过大，占据过多空间\n10. ❌ 登录按钮绝对定位，脱离文档流，破坏布局结构\n\n**改进建议:**\n1. 修复容器尺寸：将 width: 150px 改为合适的宽度，如 400px\n2. 移除位置偏移：删除 margin-left: -50px 和 transform: rotate(5deg)\n3. 调整文字大小：将 font-size: 8px 改为至少 14px\n4. 移除文字截断：删除 overflow: hidden 和 text-overflow: ellipsis\n5. 修复元素定位：移除 left: 20px 偏移，使用一致的对齐方式\n6. 调整按钮尺寸：减小刷新按钮的 padding 和 font-size\n7. 修复按钮定位：将登录按钮从绝对定位改为正常文档流定位\n\n**总体评估:** 页面存在严重的布局缺陷，主要问题包括容器尺寸不当、元素定位错误和响应式设计失效。这些问题严重影响了用户体验和页面可用性。",
+    "timestamp": "2025-12-28T05:27:04.037Z"
+  },
+  "key_issues": [
+    {
+      "category": "布局问题",
+      "description": "### 布局缺陷深度分析结果",
+      "full_text": "### 布局缺陷深度分析结果"
+    },
+    {
+      "category": "布局问题",
+      "description": "**",
+      "full_text": "**发现的布局问题 (10个):**"
+    },
+    {
+      "category": "布局问题",
+      "description": "150px)，导致内容严重挤压",
+      "full_text": "1. ❌ 登录容器宽度过小 (width: 150px)，导致内容严重挤压"
+    },
+    {
+      "category": "布局问题",
+      "description": "-50px)，破坏页面对齐",
+      "full_text": "2. ❌ 容器位置偏移 (margin-left: -50px)，破坏页面对齐"
+    },
+    {
+      "category": "布局问题",
+      "description": "20px)，造成布局不整齐",
+      "full_text": "6. ❌ 输入框相对定位偏移 (left: 20px)，造成布局不整齐"
+    },
+    {
+      "category": "布局问题",
+      "description": "7. ⚠️ 验证码容器使用列布局，可能影响移动端体验",
+      "full_text": "7. ⚠️ 验证码容器使用列布局，可能影响移动端体验"
+    },
+    {
+      "category": "布局问题",
+      "description": "9. ❌ 刷新按钮尺寸过大，占据过多空间",
+      "full_text": "9. ❌ 刷新按钮尺寸过大，占据过多空间"
+    },
+    {
+      "category": "布局问题",
+      "description": "10. ❌ 登录按钮绝对定位，脱离文档流，破坏布局结构",
+      "full_text": "10. ❌ 登录按钮绝对定位，脱离文档流，破坏布局结构"
+    },
+    {
+      "category": "布局问题",
+      "description": "150px 改为合适的宽度，如 400px",
+      "full_text": "1. 修复容器尺寸：将 width: 150px 改为合适的宽度，如 400px"
+    },
+    {
+      "category": "布局问题",
+      "description": "-50px 和 transform: rotate(5deg)",
+      "full_text": "2. 移除位置偏移：删除 margin-left: -50px 和 transform: rotate(5deg)"
+    },
+    {
+      "category": "布局问题",
+      "description": "20px 偏移，使用一致的对齐方式",
+      "full_text": "5. 修复元素定位：移除 left: 20px 偏移，使用一致的对齐方式"
+    },
+    {
+      "category": "布局问题",
+      "description": "6. 调整按钮尺寸：减小刷新按钮的 padding 和 font-size",
+      "full_text": "6. 调整按钮尺寸：减小刷新按钮的 padding 和 font-size"
+    },
+    {
+      "category": "布局问题",
+      "description": "7. 修复按钮定位：将登录按钮从绝对定位改为正常文档流定位",
+      "full_text": "7. 修复按钮定位：将登录按钮从绝对定位改为正常文档流定位"
+    },
+    {
+      "category": "布局问题",
+      "description": "** 页面存在严重的布局缺陷，主要问题包括容器尺寸不当、元素定位错误和响应式设计失效。这些问题严重影响了用户体验和页面可用性。",
+      "full_text": "**总体评估:** 页面存在严重的布局缺陷，主要问题包括容器尺寸不当、元素定位错误和响应式设计失效。这些问题严重影响了用户体验和页面可用性。"
+    }
+  ]
+}

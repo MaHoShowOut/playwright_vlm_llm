@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文点击验证码测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #495057;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .instruction {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 12px;
+            border-left: 5px solid #2196f3;
+            font-size: 1.1rem;
+            color: #1976d2;
+        }
+        
+        .captcha-container {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #e9ecef;
+            margin-bottom: 30px;
+            min-height: 200px;
+            position: relative;
+        }
+        
+        .captcha-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .char-button {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #6c757d;
+            background: white;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .char-button:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .char-button.clicked {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        
+        .char-button.wrong {
+            background: #dc3545;
+            border-color: #dc3545;
+            color: white;
+        }
+        
+        .char-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .char-button:hover::before {
+            opacity: 1;
+        }
+        
+        .noise {
+            position: absolute;
+            font-size: 12px;
+            color: #ccc;
+            z-index: 1;
+            pointer-events: none;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,123,255,0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(108,117,125,0.3);
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 中文点击验证码</h1>
+        
+        <div class="instruction">
+            <strong>请依次点击：</strong><span id="targetChars">...</span>
+        </div>
+        
+        <div class="captcha-container">
+            <div class="captcha-grid" id="captchaGrid">
+                <!-- 中文字符按钮将在这里生成 -->
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            
+            <div class="stats">
+                <span>进度: <span id="progressText">0/0</span></span>
+                <span>剩余时间: <span id="timeLeft">60</span>秒</span>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="btn btn-primary" onclick="validateCaptcha()">验证</button>
+            <button class="btn btn-secondary" onclick="refreshCaptcha()">重新生成</button>
+        </div>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // 中文字符池
+        const chineseChars = [
+            '春', '夏', '秋', '冬', '东', '南', '西', '北', '上', '下', '左', '右',
+            '红', '绿', '蓝', '黄', '黑', '白', '紫', '粉', '橙', '灰', '青', '棕',
+            '大', '小', '高', '低', '长', '短', '宽', '窄', '厚', '薄', '深', '浅',
+            '山', '水', '火', '土', '金', '木', '石', '云', '风', '雨', '雪', '冰',
+            '日', '月', '星', '天', '地', '海', '河', '湖', '花', '草', '树', '叶',
+            '猫', '狗', '鸟', '鱼', '虎', '龙', '凤', '鹤', '鹿', '熊', '兔', '鼠'
+        ];
+        
+        const noiseChars = ['·', '○', '◇', '△', '□', '※', '☆', '★', '♦', '♠', '♣', '♥'];
+        
+        let currentTargetChars = [];
+        let clickedChars = [];
+        let startTime = 0;
+        let timeLeft = 60;
+        let timer = null;
+        
+        function getRandomChars(count) {
+            const shuffled = [...chineseChars].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        function generateCaptcha() {
+            const grid = document.getElementById('captchaGrid');
+            const container = document.querySelector('.captcha-container');
+            
+            // 清除旧的干扰元素
+            container.querySelectorAll('.noise').forEach(el => el.remove());
+            
+            // 生成16个随机中文字符
+            const allChars = getRandomChars(16);
+            
+            // 随机选择3-4个作为目标字符
+            const targetCount = Math.floor(Math.random() * 2) + 3; // 3-4个
+            currentTargetChars = allChars.slice(0, targetCount).sort(() => 0.5 - Math.random());
+            clickedChars = [];
+            
+            // 显示目标字符
+            document.getElementById('targetChars').textContent = currentTargetChars.join(' → ');
+            
+            // 清空网格
+            grid.innerHTML = '';
+            
+            // 随机排列所有字符
+            const shuffledChars = [...allChars].sort(() => 0.5 - Math.random());
+            
+            // 创建按钮
+            shuffledChars.forEach((char, index) => {
+                const button = document.createElement('div');
+                button.className = 'char-button';
+                button.textContent = char;
+                button.onclick = () => clickChar(char, button);
+                grid.appendChild(button);
+            });
+            
+            // 添加干扰元素
+            addNoiseElements();
+            
+            // 更新进度
+            updateProgress();
+            
+            // 重置计时器
+            resetTimer();
+        }
+        
+        function addNoiseElements() {
+            const container = document.querySelector('.captcha-container');
+            for (let i = 0; i < 20; i++) {
+                const noise = document.createElement('div');
+                noise.className = 'noise';
+                noise.textContent = noiseChars[Math.floor(Math.random() * noiseChars.length)];
+                noise.style.left = Math.random() * 90 + '%';
+                noise.style.top = Math.random() * 70 + '%';
+                noise.style.animationDelay = Math.random() * 3 + 's';
+                container.appendChild(noise);
+            }
+        }
+        
+        function clickChar(char, button) {
+            if (clickedChars.includes(char)) {
+                return; // 已经点击过了
+            }
+            
+            const expectedChar = currentTargetChars[clickedChars.length];
+            
+            if (char === expectedChar) {
+                button.classList.add('clicked');
+                clickedChars.push(char);
+                updateProgress();
+                
+                if (clickedChars.length === currentTargetChars.length) {
+                    setTimeout(() => {
+                        showResult('验证成功！🎉', 'success');
+                        clearInterval(timer);
+                    }, 300);
+                }
+            } else {
+                button.classList.add('wrong');
+                setTimeout(() => {
+                    button.classList.remove('wrong');
+                }, 500);
+                
+                // 错误惩罚：减少时间
+                timeLeft = Math.max(0, timeLeft - 5);
+                updateTimeDisplay();
+            }
+        }
+        
+        function updateProgress() {
+            const progress = (clickedChars.length / currentTargetChars.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = `${clickedChars.length}/${currentTargetChars.length}`;
+        }
+        
+        function resetTimer() {
+            clearInterval(timer);
+            timeLeft = 60;
+            updateTimeDisplay();
+            timer = setInterval(() => {
+                timeLeft--;
+                updateTimeDisplay();
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    showResult('时间到！验证失败 ⏰', 'error');
+                }
+            }, 1000);
+        }
+        
+        function updateTimeDisplay() {
+            document.getElementById('timeLeft').textContent = timeLeft;
+        }
+        
+        function validateCaptcha() {
+            if (clickedChars.length === currentTargetChars.length) {
+                showResult('验证成功！🎉', 'success');
+                clearInterval(timer);
+            } else {
+                showResult(`还需要点击 ${currentTargetChars.length - clickedChars.length} 个字符`, 'error');
+            }
+        }
+        
+        function refreshCaptcha() {
+            document.getElementById('result').style.display = 'none';
+            generateCaptcha();
+        }
+        
+        function showResult(message, type) {
+            const result = document.getElementById('result');
+            result.textContent = message;
+            result.className = `result ${type}`;
+            result.style.display = 'block';
+        }
+        
+        // 页面加载时生成验证码
+        window.onload = function() {
+            generateCaptcha();
+        };
+    </script>
+</body>
+</html>

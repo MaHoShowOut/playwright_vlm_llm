@@ -1,0 +1,469 @@
+{
+  "title": "中文点击验证码多浏览器实验报告",
+  "date": "2025-07-14T06:32:00.486Z",
+  "duration": 837.118,
+  "accuracy": "100.00",
+  "totalRuns": 90,
+  "totalSuccess": 90,
+  "totalFailures": 0,
+  "config": {
+    "totalRunsPerBrowser": 30,
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ]
+  },
+  "results": [
+    {
+      "browser": "chromium",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 3,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 5,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 6,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 7,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 8,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 9,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 10,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 11,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 12,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 13,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 14,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 15,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 16,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 17,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 18,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 19,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 20,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 21,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 22,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 23,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 24,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 25,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 26,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 27,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 28,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 29,
+      "success": true
+    },
+    {
+      "browser": "chromium",
+      "run": 30,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 3,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 5,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 6,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 7,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 8,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 9,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 10,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 11,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 12,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 13,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 14,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 15,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 16,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 17,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 18,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 19,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 20,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 21,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 22,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 23,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 24,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 25,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 26,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 27,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 28,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 29,
+      "success": true
+    },
+    {
+      "browser": "firefox",
+      "run": 30,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 1,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 2,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 3,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 4,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 5,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 6,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 7,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 8,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 9,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 10,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 11,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 12,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 13,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 14,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 15,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 16,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 17,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 18,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 19,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 20,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 21,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 22,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 23,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 24,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 25,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 26,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 27,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 28,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 29,
+      "success": true
+    },
+    {
+      "browser": "webkit",
+      "run": 30,
+      "success": true
+    }
+  ]
+}

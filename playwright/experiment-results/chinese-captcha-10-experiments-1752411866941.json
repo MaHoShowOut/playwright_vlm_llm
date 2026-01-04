@@ -1,0 +1,205 @@
+{
+  "experiment": {
+    "title": "中文点击验证码10次实验",
+    "totalRounds": 10,
+    "successCount": 10,
+    "successRate": "100.0%",
+    "avgLvmAccuracy": "100.0%",
+    "avgPositionAccuracy": "100.0%",
+    "experimentTime": "2025-07-13T13:04:26.941Z"
+  },
+  "results": [
+    {
+      "round": 1,
+      "success": true,
+      "targetChars": [
+        "春",
+        "橙",
+        "粉"
+      ],
+      "recognizedChars": [
+        "春",
+        "橙",
+        "粉"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:00:55.072Z"
+    },
+    {
+      "round": 2,
+      "success": true,
+      "targetChars": [
+        "鱼",
+        "鸟",
+        "粉",
+        "黑"
+      ],
+      "recognizedChars": [
+        "鱼",
+        "鸟",
+        "粉",
+        "黑"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:01:11.497Z"
+    },
+    {
+      "round": 3,
+      "success": true,
+      "targetChars": [
+        "蓝",
+        "北",
+        "秋",
+        "云"
+      ],
+      "recognizedChars": [
+        "蓝",
+        "北",
+        "秋",
+        "云"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:01:26.871Z"
+    },
+    {
+      "round": 4,
+      "success": true,
+      "targetChars": [
+        "雪",
+        "鼠",
+        "棕",
+        "金"
+      ],
+      "recognizedChars": [
+        "雪",
+        "鼠",
+        "棕",
+        "金"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:01:51.223Z"
+    },
+    {
+      "round": 5,
+      "success": true,
+      "targetChars": [
+        "春",
+        "木",
+        "河"
+      ],
+      "recognizedChars": [
+        "春",
+        "木",
+        "河"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:02:18.706Z"
+    },
+    {
+      "round": 6,
+      "success": true,
+      "targetChars": [
+        "鼠",
+        "夏",
+        "小",
+        "短"
+      ],
+      "recognizedChars": [
+        "鼠",
+        "夏",
+        "小",
+        "短"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:02:45.737Z"
+    },
+    {
+      "round": 7,
+      "success": true,
+      "targetChars": [
+        "窄",
+        "冰",
+        "天",
+        "春"
+      ],
+      "recognizedChars": [
+        "窄",
+        "冰",
+        "天",
+        "春"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:03:09.661Z"
+    },
+    {
+      "round": 8,
+      "success": true,
+      "targetChars": [
+        "左",
+        "深",
+        "冬"
+      ],
+      "recognizedChars": [
+        "左",
+        "深",
+        "冬"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:03:24.949Z"
+    },
+    {
+      "round": 9,
+      "success": true,
+      "targetChars": [
+        "叶",
+        "月",
+        "石",
+        "湖"
+      ],
+      "recognizedChars": [
+        "叶",
+        "月",
+        "石",
+        "湖"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:03:51.818Z"
+    },
+    {
+      "round": 10,
+      "success": true,
+      "targetChars": [
+        "左",
+        "春",
+        "西"
+      ],
+      "recognizedChars": [
+        "左",
+        "春",
+        "西"
+      ],
+      "positionAccuracy": 100,
+      "lvmAccuracy": 100,
+      "executionSuccess": true,
+      "timestamp": "2025-07-13T13:04:07.743Z"
+    }
+  ]
+}
